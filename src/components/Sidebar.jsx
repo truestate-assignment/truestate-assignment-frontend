@@ -120,7 +120,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             </div>
             <div className="flex flex-col">
               <span className="font-semibold text-sm text-gray-800">Vault</span>
-              <span className="text-xs text-gray-500">Anurag Yadav</span>
+              <span className="text-xs text-gray-500">Punit Punde</span>
             </div>
           </div>
           {/* Close Button (Mobile Only) */}
