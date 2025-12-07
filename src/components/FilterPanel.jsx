@@ -234,8 +234,8 @@ const SortDropdown = ({ value = 'name-asc', onChange }) => {
   );
 };
 
-const FilterPanel = ({ filters, setFilters }) => {
-  const onChange = (name, val) => setFilters({ ...filters, [name]: val });
+const FilterPanel = ({ filters, setFilters, resetFilters }) => {
+  const onChange = (name, val) => setFilters(name, val);
 
   const hasActiveFilters = Object.keys(filters).some(key => {
     const value = filters[key];
@@ -249,7 +249,7 @@ const FilterPanel = ({ filters, setFilters }) => {
       <div className="flex flex-wrap items-center gap-2">
         {/* Reset Icon */}
         <button
-          onClick={() => setFilters({})}
+          onClick={resetFilters}
           className={`p-2 rounded-full transition-all duration-200 ${hasActiveFilters
             ? 'text-primary-600 hover:bg-primary-50'
             : 'text-gray-400 hover:bg-gray-100'

@@ -43,7 +43,7 @@ function App() {
               <div className="h-8 w-px bg-gray-200 mx-2 hidden md:block"></div>
               <div className="flex items-center gap-3 pl-2 cursor-pointer hover:bg-gray-50 p-1.5 rounded-lg transition-colors">
                 <div className="text-right hidden sm:block">
-                  <p className="text-sm font-medium text-gray-900">Admin User</p>
+                  <p className="text-sm font-medium text-gray-900">Punit Punde</p>
                   <p className="text-xs text-gray-500">Super Admin</p>
                 </div>
                 <UserCircleIcon className="h-9 w-9 text-gray-300" />

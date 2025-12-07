@@ -63,6 +63,19 @@ export const useTransactions = () => {
     }
   };
 
+  const resetFilters = () => {
+    setFilters({
+      gender: '',
+      category: '',
+      region: '',
+      paymentMethod: '',
+      tags: '',
+      startDate: '',
+      endDate: ''
+    });
+    setSearch('');
+  };
+
   useEffect(() => {
     loadData();
   }, [page, search, filters]);
@@ -76,6 +89,7 @@ export const useTransactions = () => {
     totalPages,
     filters,
     updateFilter,
+    resetFilters,
     refreshTransactions: loadData
   };
 };

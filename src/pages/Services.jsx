@@ -18,6 +18,7 @@ const Services = () => {
         setCurrentPage,
         filters,
         updateFilter,
+        resetFilters,
         refreshTransactions
     } = useTransactions();
 
@@ -83,7 +84,7 @@ const Services = () => {
             </div>
 
             <StatsCards transactions={transactions} />
-            <FilterPanel filters={filters} updateFilter={updateFilter} />
+            <FilterPanel filters={filters} setFilters={updateFilter} resetFilters={resetFilters} />
 
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
                 {error ? (
