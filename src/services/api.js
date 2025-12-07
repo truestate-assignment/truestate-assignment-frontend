@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/transactions';
+const API_URL = import.meta.env.VITE_API_URL || 'https://truestate-assignment-backend-production.up.railway.app/api/transactions';
 
 export const fetchTransactions = async (params) => {
   try {
