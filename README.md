@@ -1,5 +1,5 @@
 # Frontend - Retail Sales Management System
-
+https://truestate-assignment-frontend-v2.vercel.app/
 Modern, responsive React application for managing retail sales data with advanced search, filtering, and data visualization capabilities.
 
 ## Tech Stack
